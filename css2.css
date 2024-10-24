@@ -32,10 +32,9 @@
   border-radius:20px;
   border-color: red;
   display: inline-block;
-  margin: 0 10px; /* 10px na distansya sa kaliwa't kanan */
+  margin: 0 30px; /* 10px na distansya sa kaliwa't kanan */
   padding: 5px 10px; /* Kunting padding para maging maayos tignan */
   background-color: #f8e0b1; /* Kulay ng background ng bawat link */
-  border-radius: 5px; /* Kunting curve sa gilid */
   text-decoration: none; /* Tinatanggal ang underline */
   color: black; /* Kulay ng text */
         }
