@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="css2.css">
+  <style>
+      body {
+          background-image: url('Goku.jpeg'); 
+          background-size: cover;
+          background-position: center; 
+          background-repeat: no-repeat; 
+          height: 100vh; 
+          margin: 0;
+          color: white;
+          text-align: center;
+      }
+
+      .hidden {
+          display: none; /* Hide elements initially */
+      }
+
+      #welcomeMessage {
+          font-size: 24px;
+          margin-top: 20px;
+          text-shadow: 0 0 10px orange, 0 0 10px red;
+      }
+
+      .nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          text-shadow: 0 0 10px orange, 0 0 10px red;
+      }
+  </style>
+    
+    <a href="login1.html" style="color: white; background-color: red; padding: 5px; text-decoration: none; animation: fire 1s infinite; border-radius: 50px; width: 80px; height: 20px;">login</a>
+    
+    
+
+</head>
+<body>
+  <div id="header"></div>
+  
+  <h2 style="text-shadow: 0 0 5px orange, 0 0 10px red;">MY WEBSITE</h2>
+
+  <div class="nav">
+    <h3>
+      <a href="index.html">Home</a> |
+      <a href="video.html">Video</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact Us</a>
+    </h3>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+    <img class="picture" src="Mark.jpeg" width="100" height="100" alt="Mark">
+  </div>
+
+  <div class="containerin" style="margin-top: 20px;">
+    <img src="Gohan.jpeg" width="50" alt="Gohan">
+    <img src="Klirin.jpeg" width="50" height="90" alt="Klirin">
+    <img src="Picolo.jpeg" width="50" alt="Picolo">
+    <img src="Trunks.jpeg" width="55" alt="Trunks">
+    <img src="Vegeta.jpeg" width="50" height="90" alt="Vegeta">
+  </div>
+
+  <!-- Welcome Message -->
+  <div id="welcomeMessage" class="hidden"></div>
+
+  <div class="music" style="background-color: red; padding: 10px; margin-top: 20px;">
+    <audio class="custom-audio" controls style="width: 100%;">
+      <source src="Juicewrld.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </div>
+
+  <div id="footer" style="margin-top: 20px;">&copy; Copyright 2024</div>
+
+  <script>
+  
+    const uniqueWebsiteName = "mark";
+
+        
+        const userWebsiteName = prompt("Please enter the name of the website:");
+
+        
+        if (userWebsiteName !== uniqueWebsiteName) {
+            
+            alert("Error: The website name you entered is incorrect.");
+            window.location.href = '404.html'; 
+        }
+    
+    if (userName) {
+    
+      document.write("welcomeMessage").textContent = "Welcome to My Website, " + userName + "!";
+      document.write("welcomeMessage").classList.remove('hidden');
+    } else {
+      document.write("welcomeMessage").textContent = "Welcome to My Website!";
+      document.write("welcomeMessage").classList.remove('hidden');
+    }
+  </script>
+  
+</body>
+</html>
