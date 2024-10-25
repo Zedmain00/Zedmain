@@ -27,19 +27,20 @@
   border-color: firebrick;
 }
 
- .nav a{
-  
-  border: solid;
-  border-radius:20px;
-  border-color: red;
+ nav a {
+  border: solid 2px red; /* Ensure the border is visible */
+  border-radius: 20px;
   display: inline-block;
-  margin: 10px 10px 10px 10px; /* 10px na distansya sa kaliwa't kanan */
-  padding: 10px 10px 10px 10px; /* Kunting padding para maging maayos tignan */
-  background-color: #f8e0b1; /* Kulay ng background ng bawat link */
-  text-decoration: none; /* Tinatanggal ang underline */
-  margin-top: 10px 10px
-  margin-bottom: 10px 10px
-        } 
+  margin: 20px 10px !important; /* Increase margin, add !important to override */
+  padding: 15px 20px; /* Add more padding for visual balance */
+  background-color: #f8e0b1;
+  text-decoration: none; 
+}
+
+/* If you need to adjust margin only for About and Contact Us buttons specifically */
+#aboutButton, #contactButton {
+  margin-top: 30px !important; /* Force margin to be applied */
+}
 
 
 .math{
