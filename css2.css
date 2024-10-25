@@ -27,15 +27,7 @@
   border-color: firebrick;
 }
 
- nav a {
-  border: solid 2px red; /* Ensure the border is visible */
-  border-radius: 20px;
-  display: inline-block;
-  margin: 20px 10px !important; /* Increase margin, add !important to override */
-  padding: 15px 20px; /* Add more padding for visual balance */
-  background-color: #f8e0b1;
-  text-decoration: none; 
-}
+ 
 
 /* If you need to adjust margin only for About and Contact Us buttons specifically */
 #aboutButton, #contactButton {
