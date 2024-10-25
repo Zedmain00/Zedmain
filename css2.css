@@ -26,7 +26,8 @@
   border-width: 5px;
   border-color: firebrick;
 }
-.nav a{
+
+ .nav a{
   
   border: solid;
   border-radius:20px;
@@ -38,8 +39,7 @@
   text-decoration: none; /* Tinatanggal ang underline */
   margin-top: 10px 10px
   margin-bottom: 10px 10px
-        }
-  
+        } 
 
 
 .math{
